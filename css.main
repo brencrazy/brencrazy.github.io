@@ -1,0 +1,119 @@
+
+#box1 {
+  background-color: #75888F;
+  padding: 70px;
+  color: white;
+  text-align: center;
+}
+@import "compass/css3";
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,400,700);
+
+$normal-img:"http://crazy-frankenstein.com/free-wallpapers-files/seasonal-wallpapers/summer-scenes-wallpapers/summer-scenes-wallpapers-1024x768.jpg";
+$blurred-img:"http://harso.info/assets/img/backgrounds/1.jpg";
+
+body{
+	background-image:url(http://cdn2.landscapehdwalls.com/wallpapers/1/autumn-mountain-river-5452-1680x1050.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	font-family:Raleway, Open Sans, Droid Sans, Roboto,arial, sans-serif;
+}
+.blurred-bg{
+
+	background-image:url($blurred-img);
+	background-repeat:no-repeat;
+	@include background-size(cover);
+	background-attachment: fixed;
+   
+	&.tinted{
+		@include background-image(linear-gradient(0deg, rgba(255,255,255,.2),rgba(255,255,255,.2)),url($blurred-img));
+	}
+	&.shaded{
+		@include background-image(linear-gradient(0deg, rgba(0,0,0,.2),rgba(0,0,0,.2)),url($blurred-img));
+	}
+}
+.box{
+	width:500px;
+	height:1080px;
+	opacity:0.9;
+  left:-(width/2);
+  top:55%;
+	position:absolute;
+	border-radius:35px;
+	@include box-shadow(0 90px 300px rgba(0,0,0,.6));
+	border: 1px solid rgba(255,255,255,.3);
+	padding:10px;
+	text-align: auto;
+	@include box-sizing(border-box);
+	text-shadow:0 1.5px 1.6px rgba(0,0,0,.4);
+  display: flex;
+  transition: box-shadow .3s ease;
+  
+	&:active{
+    cursor:move;
+    @include box-shadow(0 20px 50px rgba(0,0,0,.9));
+    }
+ 
+  
+  .content{
+    margin: auto;
+  }
+}
+h1,h2,a,p{
+	color:blue;
+	font:100;
+  
+	.tinted &{
+		color:black;
+		text-shadow:0 px px rgba(255,255,255,.2);
+	}
+}
+h4{
+  font-size: 25px;
+    color: #BC1307
+}
+h5{
+  font-size: 36px;
+    color: red
+}
+h2{ font-size: 24px }
+p{
+  margin: 50px;
+  &.related{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #444;
+    
+    a{
+      font-weight: 700;
+      color: green;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+#wrapper
+{
+ width:500px;
+ height:500px;
+ margin:0 auto;
+ 
+}
+body{
+  background-image: url(http://mesooni.com/wp-content/uploads/2015/11/northern-lights-high-definition-wallpaper.jpg); 
+  	background-attachment: fixed;
+  }
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid red;
+    margin: 0em 0;
+    padding: 0; 
+}
+body{background-: #ededed;margin:0;padding:0;}#menu_wrap{position:relative;margin-top:20px;margin-left:auto;margin-right:auto;padding:0; padding-right:0px;width:274px;height:29px;list-style-type:none;-webkit-border-radius:13px;-moz-border-radius:13px;border-radius:13px;-webkit-box-shadow:0 1px 3px rgba(0,0,0,.2);-moz-box-shadow:0 1px 3px rgba(0,0,0,.2);box-shadow:0 1px 3px rgba(0,0,0,.2)}.button a{cursor:pointer;text-align:center;font:12px/100% Arial, Helvetica, sans-serif;font-weight:bold;position:relative;min-width:50px;height:20px;float:left;padding:10px;padding-top:4.5px;padding-bottom:4.5px;text-decoration:none;text-shadow:0 1px 1px rgba(0,0,0,.3)}.button:first-child a{-webkit-border-top-left-radius:13px;-webkit-border-bottom-left-radius:13px;-moz-border-topleft-radius:13px;-moz-border-bottomleft-radius:13px;border-top-left-radius:13;border-bottom-left-radius:13px}.Red,.Red .button a{color:#faddde;background: #ed1c24;border-right:solid 1px #aa1317;background: -moz-linear-gradient(top, #ed1c24 0%, #aa1317 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ed1c24), color-stop(100%,#aa1317));background: -webkit-linear-gradient(top, #ed1c24 0%,#aa1317 100%);background: -o-linear-gradient(top, #ed1c24 0%,#aa1317 100%);background: -ms-linear-gradient(top, #ed1c24 0%,#aa1317 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed1c24', endColorstr='#aa1317',GradientType=0 );background: linear-gradient(top, #ed1c24 0%,#aa1317 100%);}.Red .button a:hover,.Red .button a:focus{background: #c9151b;background: -moz-linear-gradient(top, #c9151b 0%, #a11115 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c9151b), color-stop(100%,#a11115));background: -webkit-linear-gradient(top, #c9151b 0%,#a11115 100%);background: -o-linear-gradient(top, #c9151b 0%,#a11115 100%);background: -ms-linear-gradient(top, #c9151b 0%,#a11115 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9151b', endColorstr='#a11115',GradientType=0 );background: linear-gradient(top, #c9151b 0%,#a11115 100%);}.Red .button a:active{color:#de898c;background: #aa1317;background: -moz-linear-gradient(top, #aa1317 0%, #ed1c24 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aa1317), color-stop(100%,#ed1c24));background: -webkit-linear-gradient(top, #aa1317 0%,#ed1c24 100%);background: -o-linear-gradient(top, #aa1317 0%,#ed1c24 100%);background: -ms-linear-gradient(top, #aa1317 0%,#ed1c24 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa1317', endColorstr='#ed1c24',GradientType=0 );background: linear-gradient(top, #aa1317 0%,#ed1c24 100%);}.button:last-child a{float:left;border:none; -webkit-border-top-right-radius:13px;-webkit-border-bottom-right-radius:13px;-moz-border-radius:13px;border-top-right-radius:13px;border-bottom-right-radius:13px
