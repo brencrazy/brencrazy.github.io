@@ -1,0 +1,149 @@
+<script type="text/javascript">
+  <!--
+  if (screen.width <= 800) {
+    window.location = "http://lazyoldjohn.org/s2015/period4/BHS/indexmobile";
+  }
+  //-->
+</script>
+
+
+<style>
+#box1 {
+  background-color: #75888F;
+  padding: 50px;
+  color: white;
+  text-align: center;
+}
+@import "compass/css3";
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,400,700);
+
+$normal-img:"http://crazy-frankenstein.com/free-wallpapers-files/seasonal-wallpapers/summer-scenes-wallpapers/summer-scenes-wallpapers-1024x768.jpg";
+$blurred-img:"http://harso.info/assets/img/backgrounds/1.jpg";
+
+body{
+	background-image:url(http://cdn2.landscapehdwalls.com/wallpapers/1/autumn-mountain-river-5452-1680x1050.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	font-family:Raleway, Open Sans, Droid Sans, Roboto,arial, sans-serif;
+}
+.blurred-bg{
+
+	background-image:url($blurred-img);
+	background-repeat:no-repeat;
+	@include background-size(cover);
+	background-attachment: fixed;
+   
+	&.tinted{
+		@include background-image(linear-gradient(0deg, rgba(255,255,255,.2),rgba(255,255,255,.2)),url($blurred-img));
+	}
+	&.shaded{
+		@include background-image(linear-gradient(0deg, rgba(0,0,0,.2),rgba(0,0,0,.2)),url($blurred-img));
+	}
+}
+.box{
+	width:500px;
+	height:930px;
+	opacity:0.9;
+  left:-webkit-calc( 50% - 250px );
+  top:10%;
+	position:absolute;
+	border-radius:35px;
+	@include box-shadow(0 90px 300px rgba(0,0,0,.6));
+	border:-5px solid rgba(255,255,255,.3);
+	padding:10px;
+	text-align: center;
+	@include box-sizing(border-box);
+	text-shadow:0 1.5px 1.6px rgba(0,0,0,.4);
+  display: flex;
+  transition: box-shadow .3s ease;
+  
+	&:active{
+    cursor:move;
+    @include box-shadow(0 20px 50px rgba(0,0,0,.9));
+    }
+ 
+  
+  .content{
+    margin: px;
+  }
+}
+h1,h2,a,p{
+	color:blue;
+	font:100;
+  
+	.tinted &{
+		color:black;
+		text-shadow:0 px px rgba(255,255,255,.2);
+	}
+}
+h4{
+  font-size: 15px;
+    color: red
+}
+h5{
+  font-size: 26px;
+    color: red
+}
+h2{ font-size: 14px }
+p{
+  margin: 50px;
+  &.related{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #444;
+    
+    a{
+      font-weight: 700;
+      color: green;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+body{
+  background-image: url(http://mesooni.com/wp-content/uploads/2015/11/northern-lights-high-definition-wallpaper.jpg); 
+  	background-attachment: fixed;
+  }
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid red;
+    margin: 0em 0;
+    padding: 0; 
+}
+body{background-: #ededed;margin:0;padding:0;}#menu_wrap{position:relative;margin-top:20px;margin-left:auto;margin-right:auto;padding:0; padding-right:0px;width:274px;height:29px;list-style-type:none;-webkit-border-radius:13px;-moz-border-radius:13px;border-radius:13px;-webkit-box-shadow:0 1px 3px rgba(0,0,0,.2);-moz-box-shadow:0 1px 3px rgba(0,0,0,.2);box-shadow:0 1px 3px rgba(0,0,0,.2)}.button a{cursor:pointer;text-align:center;font:12px/100% Arial, Helvetica, sans-serif;font-weight:bold;position:relative;min-width:50px;height:20px;float:left;padding:10px;padding-top:4.5px;padding-bottom:4.5px;text-decoration:none;text-shadow:0 1px 1px rgba(0,0,0,.3)}.button:first-child a{-webkit-border-top-left-radius:13px;-webkit-border-bottom-left-radius:13px;-moz-border-topleft-radius:13px;-moz-border-bottomleft-radius:13px;border-top-left-radius:13;border-bottom-left-radius:13px}.Red,.Red .button a{color:#faddde;background: #ed1c24;border-right:solid 1px #aa1317;background: -moz-linear-gradient(top, #ed1c24 0%, #aa1317 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ed1c24), color-stop(100%,#aa1317));background: -webkit-linear-gradient(top, #ed1c24 0%,#aa1317 100%);background: -o-linear-gradient(top, #ed1c24 0%,#aa1317 100%);background: -ms-linear-gradient(top, #ed1c24 0%,#aa1317 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed1c24', endColorstr='#aa1317',GradientType=0 );background: linear-gradient(top, #ed1c24 0%,#aa1317 100%);}.Red .button a:hover,.Red .button a:focus{background: #c9151b;background: -moz-linear-gradient(top, #c9151b 0%, #a11115 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c9151b), color-stop(100%,#a11115));background: -webkit-linear-gradient(top, #c9151b 0%,#a11115 100%);background: -o-linear-gradient(top, #c9151b 0%,#a11115 100%);background: -ms-linear-gradient(top, #c9151b 0%,#a11115 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9151b', endColorstr='#a11115',GradientType=0 );background: linear-gradient(top, #c9151b 0%,#a11115 100%);}.Red .button a:active{color:#de898c;background: #aa1317;background: -moz-linear-gradient(top, #aa1317 0%, #ed1c24 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aa1317), color-stop(100%,#ed1c24));background: -webkit-linear-gradient(top, #aa1317 0%,#ed1c24 100%);background: -o-linear-gradient(top, #aa1317 0%,#ed1c24 100%);background: -ms-linear-gradient(top, #aa1317 0%,#ed1c24 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa1317', endColorstr='#ed1c24',GradientType=0 );background: linear-gradient(top, #aa1317 0%,#ed1c24 100%);}.button:last-child a{float:left;border:none; -webkit-border-top-right-radius:13px;-webkit-border-bottom-right-radius:13px;-moz-border-radius:13px;border-top-right-radius:13px;border-bottom-right-radius:13px
+
+
+
+</style>
+
+
+<body>
+<div>	  <img src="https://lh3.googleusercontent.com/ls7-zkXIYioJSAik0TaeoFIFZcU3PiSyzsO7UEzsdkl6=w1107-h623-rw"   alt="Mountain View" style="position:fixed;width:123px;height:88px;">
+</div>
+  <div id="box1" class="box blurred-bg tinted">
+  <meta http-equiv="Cache-Control" content="max-age=200" />
+  <div class="title">
+        <img src="https://lh3.googleusercontent.com/m2V2FHcqHO0TC8Bh-BZD70y_KLpk2nvARFoPuljJLQSZ=w1107-h623-rw" alt="Mountain View" style="width:354px;height:138px;"> 
+ <ul id="menu_wrap" class="Red"><li class="button"><a href="http://lazyoldjohn.org/s2015/period4/BHS/">Homepage 3.0</a></li><li class="button"><a href="http://lazyoldjohn.org/s2015/period4/BHS/hobbyspage.html">Hobbies</a></li><li class="button"><a href="http://lazyoldjohn.org/s2015/period4/BHS/assignments">Assignments</a></li></ul>
+
+ <hr>
+    <div id="main"><h5>Recent Activtiy</h5><h4><u>12-1-2015</u><br>This page is un "bear"able made a emblem<br><br> <u>11-30-2015</u><br>worked on logo changed my back ground and made  version 3.0 <br><br><u>11-24-2015</u><br>rounded my corners.<br><br><u>11-22-2015</u><br>changed the look of my site. version 2.0<br><br><u>11-8-2015</u><br>
+today I made this sites colors pop.
+<br><br><u>11-5-15</u><br>This site is now online.</h4></div>
+
+    <div id="backgound"> </div> <br>  
+  <img src="http://cdnhtpointcom.htpointcom.netdna-cdn.com/wp-content/uploads/2013/03/Run-Bear-Run.gif" alt="fish" style="width:504px;height:298px;border-radius:15px;">  
+
+</div>
+  <body background= "http://mesooni.com/wp-content/uploads/2015/11/northern-lights-high-definition-wallpaper.jpg" bgproperties="fixed">
+ 
+</body>
