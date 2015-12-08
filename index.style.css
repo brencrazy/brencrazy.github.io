@@ -4,12 +4,12 @@
   color: white;
   text-align: center;
 }
-@import "compass/css3";
+import "compass/css3";
 
-@import url(http://fonts.googleapis.com/css?family=Raleway:100,400,700);
+import url(http://fonts.googleapis.com/css?family=Raleway:100,400,700);
 
-$normal-img:"http://crazy-frankenstein.com/free-wallpapers-files/seasonal-wallpapers/summer-scenes-wallpapers/summer-scenes-wallpapers-1024x768.jpg";
-$blurred-img:"http://harso.info/assets/img/backgrounds/1.jpg";
+normal-img:"http://crazy-frankenstein.com/free-wallpapers-files/seasonal-wallpapers/summer-scenes-wallpapers/summer-scenes-wallpapers-1024x768.jpg";
+blurred-img:"http://harso.info/assets/img/backgrounds/1.jpg";
 
 body{
 	background-image:url(http://cdn2.landscapehdwalls.com/wallpapers/1/autumn-mountain-river-5452-1680x1050.jpg);
@@ -23,7 +23,7 @@ body{
 
 	background-image:url($blurred-img);
 	background-repeat:no-repeat;
-	@include background-size(cover);
+	include background-size(cover);
 	background-attachment: fixed;
    
 	&.tinted{
